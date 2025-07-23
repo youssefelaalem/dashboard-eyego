@@ -1,39 +1,38 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
+1.Clone Repository
 
-git clone https://github.com/youssefelaalem/your-repo.git
-cd your-repo
+- git clone https://github.com/youssefelaalem/dashboard-eyego.git
+- cd dashboard-eyego
 
-First, run the development server:
+2.Inatall Dependencies & Run Project 
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- npm install
+- npm run dev
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3.Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+## Implementation Approach
 
-To learn more about Next.js, take a look at the following resources:
+This project uses Next.js for server-side rendering and routing, combined with React, Formik for form handling, and Yup for schema validation. Here's a brief overview of the core implementation:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Authentication Guard
+A ClientAuthGuard checks for the existence of a token in localStorage. If absent, it redirects the user to the /login route.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Login Page
+Built using Formik for form state management and Yup for schema validation. On successful login, the JWT token is stored in localStorage.
 
-## Deploy on Vercel
+- Dynamic Data Table
+The Employees page displays a dynamic table with sorting, filtering, and pagination using a custom implementation combined with Material-UI components.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Chart Integration
+A chart component built using Recharts is displayed on the Home Dashboard to visualize sample analytics data.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- State Management with Redux Toolkit
+Application-wide state (like user data, authentication state, and filters) is managed using Redux Toolkit, allowing for clean and maintainable logic.
+
+- Responsive Design with Tailwind CSS
+The layout is designed to be mobile-friendly and responsive using Tailwind CSS utility classes, ensuring optimal viewing across devices.
