@@ -9,7 +9,7 @@ import Calender from "../Components/Calender";
 import BrushBarChart from "../Components/Charts/BrushBarChart";
 import { Box, Typography } from "@mui/material";
 
-export default function HomePage({ children }: { children: React.ReactNode }) {
+export default function HomePage() {
 
 
   const dashboardData = [
