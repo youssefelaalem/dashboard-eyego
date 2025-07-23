@@ -20,7 +20,7 @@ import debounce from "lodash.debounce";
 import BasicSelect from "@/app/Components/BasicSelect";
 
 const HEAD_LABELS = ["Full Name", "Email", "Role", "Phone"];
-const FILTER_ARRAY = ["admin", "moderator"];
+const FILTER_ARRAY = ["admin", "moderator","user"];
 const SORT_OPTIONS = ["firstName", "lastName", "age", "email"];
 
 export default function UserList() {

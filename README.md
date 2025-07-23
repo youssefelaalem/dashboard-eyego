@@ -36,3 +36,6 @@ Application-wide state (like user data, authentication state, and filters) is ma
 
 - Responsive Design with Tailwind CSS
 The layout is designed to be mobile-friendly and responsive using Tailwind CSS utility classes, ensuring optimal viewing across devices.
+
+## LIVE DEPLOY
+https://dashboard-eyego-9oxd.vercel.app/login
