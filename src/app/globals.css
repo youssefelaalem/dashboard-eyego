@@ -1,6 +1,41 @@
 @import "tailwindcss";
+.dashboardData {
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
 
-:root {
+.CalenderContaniner {
+  @media (max-width: 905px) {
+    width: 240px !important;
+  }
+  @media (max-width: 768px) {
+    width: 330px !important;
+  }
+}
+
+.animate-spin {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.css-18jp67o-MuiNativeSelect-root-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input {
+  padding: 10 !important;
+  /* display: flex !important;
+  align-items: center !important; */
+}
+
+.MuiPaginationItem-root {
+  color: #06b6d4 !important;
+  border-color: #06b6d4 !important;
+}
+.Mui-selected:hover,
+.Mui-selected {
+  background-color: #06b6d4 !important;
+  color: #fff !important;
+}
+
+/* :root {
   --background: #ffffff;
   --foreground: #171717;
 }
@@ -23,4 +58,4 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
-}
+} */
